@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<meta http-equiv="Content-Language" content="en-us">
+	<title>Register Page</title>
+	
+	<link rel = "stylesheet" href ="css/style.css"> 
+	<link rel = "stylesheet" href ="css/register.css"> 
+	<link rel = "stylesheet" href ="css/tableDis.css"> 
+	<link rel = "stylesheet" href ="css/login.css"> 
+	
+	<script src="js/formvalid.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+
+	body {
+			background-image: url("Pictures/Wallpaper_HD_03.png");
+			background-repeat: repeat-x;
+			background-repeat: repeat-y;
+			background-attachment: fixed;
+    		background-color: black;
+		}
+
+
+
+
+</style>
+<body>
+
+<form method="POST" >
+	<p align="right"></p>
+	<div></div>
+	<p align="right"></p></div>
+	<p align="right"><font color="#FFFFFF">
+	<b><font size="5">
+	<img border="0" src="Pictures/LOGO.png" width="278" height="206" align="left"></font></b></p>
+	<p align="right"><b><font size="5">
+	<img border="0" src="Pictures/my_profile_icon_white.png" width="100" height="100" align="right"></font></b></p>
+	<p align="right">&nbsp;</p>
+	<button class ="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	
+<div id="id01" class="modalx">
+  
+  &nbsp;<form class="modal-contentx animatex" action="/action_page.php">
+    <div class="imgcontainerx">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Pictures/LOGO.png" alt="Avatar" class="avatarx">
+    </div>
+
+    <div class="containerx">
+      <label for="uname" style="color:black; font-size: 18px; "><b>Username</b></label>
+      <input class ="logx" type="text" placeholder="Enter Username" name="uname" required>
+<br>
+      <label for="psw"  style="color:black; font-size: 18px;"><b>Password</b></label>
+      <input class ="logx" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="Iloginx" type="submit">Login</button>
+    </div>
+
+    <div class="containerx" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnx">Cancel</button>
+       <button type="button" class="signInx"><a class ="empty" href ="register.html"> Sign In </a></button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalx) {
+        modalx.style.display = "none";
+    }
+}</script>
+
+
+
+
+
+	</b><br><br><br><br>
+	</p>
+	</form>
+	<form class="example" action="" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit" ><i style="color: white;" class="fa fa-search"></i></button>
+	</form>
+</form>
+
+
+
+
+<div class="topnav" >
+		<a class="active" href="index.php">Home</a>
+		<a href="View.php">Activities</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="aboutUs.html">About Us</a>
+		<a href="adminhome.php">Admin</a></div>
+	
+
+
+
+
+  <div class="containerss" >
+  	
+	 <form id="form" method="post" action="/action_page.php"> 
+    <div></b><br><br><br><br>
+    <p>Please fill in this form to create an account.</p>
+    <hr></div>
+
+    <label for="name"><b>Name</b></label>
+    <input class ="ss" type="text" placeholder="Enter Name" name="name" id="value1">
+
+    <label for="address"><b>Address</b></label>
+    <input class ="ss" type="text" placeholder="Enter Address" name="address" id="value2">
+
+    <label for="email"><b>Email</b></label>
+    <input class ="ss" type="text" placeholder="Enter Email" name="email" id="value3">
+
+ <label for="psw"><b>Password</b></label> 
+    <input class ="ss" type="password" placeholder="Enter Password" name="psw" id="value4">
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input class ="ss" type="password" placeholder="Repeat Password" name="psw-repeat" id="value5"></form>
+<br><br><br>
+    <button type="submit" class="registerbtn" id="btn">Register</button>
+    <br><br>
+  </div>
+  
+  <div class="containerss signinss">
+    
+  </div>
+  <script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var v1val = $("#value1").val();
+var v2val = $("#value2").val();
+var v3val = $("#value3").val();
+var v4val = $("#value4").val();
+var v5val = $("#value5").val();
+
+
+if(v1val == '' && v2val == '' && v3val == '' && v4val == '' && v5val == '')
+{
+alert("Please fill out the form");
+}
+
+else if(v1val == '' && v2val !== '' && v3val !== '' && v4val !== '' && v5val !== '')
+{
+alert("Name is required");
+}
+
+else if(v1val !== '' && v2val == '' && v3val !== '' && v4val !== '' && v5val !== '')
+{
+alert("Address is required");
+}
+else if(v1val !== '' && v2val !== '' && v3val == '' && v4val !== '' && v5val !== '')
+{
+alert("E-mail is required");
+}
+else if(v1val !== '' && v2val !== '' && v3val !== '' && v4val == '' && v5val !== '')
+{
+alert("Password is required");
+}
+
+else if(v1val !== '' && v2val !== '' && v3val !== '' && v4val !== '' && v5val == '')
+{
+alert("confirm password");
+}
+
+});
+});
+</script>
+
+
+	
+
+	<h1 class= "h1R">REGISTER</h1>		
+ 
+</body>
+</html>

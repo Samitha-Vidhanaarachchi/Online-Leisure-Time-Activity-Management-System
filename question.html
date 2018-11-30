@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+
+<body>
+
+<form method = "post" action="">
+
+<p> Online TAXI</p>
+Name <input type="text" name="name"><br>
+<br>
+Phone <input type="text" name="phone"><br>
+<br>
+Email <input type="text" name="email"><br>
+<br>
+<br>
+<br>
+
+<fieldset>
+<legend>Which taxi do you require</legend>
+<input type="radio" name="V" checked >Car<br>
+<br>
+<input type="radio" name="V" >Var<br>
+<br>
+<input type="checkbox" name="d"  >Tuk Tuk<br><input type="checkbox" name="d"  >Tuk Tuk<br><input type="checkbox" name="d"  >Tuk Tuk<br><input type="checkbox" name="d"  >Tuk Tuk<br>
+<br>
+</fieldset>
+<br>
+<br>
+<br>
+
+Pickup Date Time <input type="text" name="name" value="mm/dd/yyyy --:-- --"><br>
+<br>
+Pickup Places<input list="places">
+<datalist id="places">
+<option value="Negombo">
+<option value="Colombo">
+<option value="Gampaha">
+</datalist>
+<br>
+<br>
+
+Drop Off place <input type="text" name="dp"><br>
+<br>
+special Instructions<textarea rows="10" cols="30"></textarea>
+<br>
+
+<input type="submit" value ="submit Booking">
+<input type="reset" value ="Reset">
+<br>
+<br>
+<button type="button" onclick="alert('Hari giyada? :-D ')" >click me</button>
+
+
+
+<input type="text" id="a">
+<button type="button" onclick="my()">bbbbb</button>
+
+
+<p id ="H"></p>
+
+<script>
+function my(){
+var name = document.getElementById("a").value;
+document.getElementById("H").innerHTML = "hello" + name;}
+</script>
+</body>
+
+</html>

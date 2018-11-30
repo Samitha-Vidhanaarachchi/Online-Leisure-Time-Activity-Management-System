@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<title>Home Page</title>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/slide.js"></script>
+
+	<link rel = "stylesheet" href ="css/style.css"> 
+	<link rel = "stylesheet" href ="css/tableDis.css"> 
+	<link rel = "stylesheet" href ="css/login.css"> 
+<link rel = "stylesheet" href ="css/all.css">
+	<link rel = "stylesheet" href ="css/about.css">  
+
+</head>
+
+<style>
+
+	body {
+			background-image: url("Pictures/Wallpaper_HD_03.png");
+			background-repeat: repeat-x;
+			background-repeat: repeat-y;
+			background-attachment: fixed;
+		}
+
+
+</style>
+<body>
+
+<form method="POST" >
+	<p align="right"></p>
+	<div></div>
+	<p align="right"></p></div>
+	<p align="right"><font color="#FFFFFF">
+	<b><font size="5">
+	<img border="0" src="Pictures/LOGO.png" width="278" height="206" align="left"></font></b></p>
+	<p align="right"><b><font size="5">
+	<img border="0" src="Pictures/my_profile_icon_white.png" width="100" height="100" align="right"></font></b></p>
+	<p align="right">&nbsp;</p>
+	<button class ="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login / Sign In</button>
+	
+<div id="id01" class="modalx">
+  
+  &nbsp;<form class="modal-contentx animatex" action="/action_page.php">
+    <div class="imgcontainerx">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Pictures/LOGO.png" alt="Avatar" class="avatarx">
+    </div>
+
+    <div class="containerx">
+      <label for="uname" style="color:black; font-size: 18px; "><b>Username</b></label>
+      <input class ="logx" type="text" placeholder="Enter Username" name="uname" id="value1" required >
+<br>
+      <label for="psw"  style="color:black; font-size: 18px;"><b>Password</b></label>
+      <input class ="logx" type="password" placeholder="Enter Password" name="psw" id="value2" >
+        
+      <button class="Iloginx" type="submit" id="btn">Login</button>
+    </div>
+
+    <div class="containerx" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnx">Cancel</button>
+       <button type="button" class="signInx"><a class ="empty" href ="register.html"> Sign In </a></button>
+    </div>
+  </form>
+</div>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var xval = $("#value1").val();
+var yval = $("#value2").val();
+
+if(xval == '' && yval == '')
+{
+alert("Please fill out the form");
+}
+
+else if(xval == '' && yval !== '')
+{
+alert("Username is required");
+}
+
+else{
+alert("Password is required");
+}
+});
+});
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalx) {
+        modalx.style.display = "none";
+    }
+}
+
+
+
+
+
+</script>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	</b><br><br><br><br>
+	</p>
+	<fieldset ><form  method="POST" action="search.php" > 
+	<p align="right"> 
+	<input  type="text" name="searchString" Placeholder="Search Games and Activities" size="50">
+	  <input  type="submit" name="submit" value="Search">
+	  </p>
+	  </form></fieldset >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="topnav" >
+		<a class="active" href="index.php">Home</a>
+		<a href="View.php">Activities</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="aboutUs.html">About Us</a>
+		<a href="adminhome.php">Admin</a></div>
+		
+ 
+<div class="contact left1">
+<h1 style="color:black"; align="center">Contact us</h1>
+<img src="Pictures/pic/01.png" width="150px" height="100px" >
+<p style="color:brown"; align="center">Name</br>Company</br>Street Address</br>Postal Code City State</br>Country</p>
+<a href="url"style="color:blue; font-size:15px"> info@leisureclub.lk</a>
+<img src="Pictures/pic/Qr.png" width="150px" height="100px" >
+
+</div>
+
+<div class="contact left2" >
+<h1 style="color:black"; align="center">Contact us</h1>
+<img src="Pictures/pic/02.png" width="150px" height="100px" >
+<p style="color:brown"; align="center">Name</br>Company</br>Street Address</br>Postal Code City State</br>Country</p>
+<a href="url"style="color:blue; font-size:15px"; > info@leisureclub.lk</a>
+<img src="Pictures/pic/Qr.png" width="150px" height="100px" >
+
+</div>
+
+<div class="contact right">
+<tr>
+		<td valign="top" colspan="5">
+		&nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126670.38337593485!2d79.7882125626139!3d7.189443134401663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ee9c6bb2f73b%3A0xa51626e908186f3e!2sNegombo!5e0!3m2!1sen!2slk!4v1510420638929" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+		<td height="664">&nbsp;</td>
+		</tr></div>
+
+<div class="open">
+<div class="opleft">
+<h1 style="color:white"; align="center">Opening days and Hours</h1>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li><button class="btn finsh">1</button></li>
+  <li><button class="btn finsh">2</span></button></li>
+  <li><button class="btn finsh">3</span></button></li>
+  <li><button class="btn finsh">4</span></button></li>
+  <li><button class="btn active">5</span></button></li>
+  <li><button class="btn">6</button></li>
+  <li><button class="btn">7</button></li>
+  <li><button class="btn">8</button></li>
+  <li><button class="btn">9</button></li>
+  <li><button class="btn">10</button></li>
+  <li><button class="btn close">11</button></li>
+  <li><button class="btn">12</button></li>
+  <li><button class="btn">13</button></li>
+  <li><button class="btn">14</button></li>
+  <li><button class="btn">15</button></li>
+  <li><button class="btn">16</button></li>
+  <li><button class="btn">17</button></li>
+  <li><button class="btn">18</button></li>
+  <li><button class="btn">19</button></li>
+  <li><button class="btn">20</button></li>
+  <li><button class="btn">21</button></li>
+  <li><button class="btn prom">22</button></li>
+  <li><button class="btn">23</button></li>
+  <li><button class="btn">24</button></li>
+  <li><button class="btn">25</button></li>
+  <li><button class="btn">26</button></li>
+  <li><button class="btn">27</button></li>
+  <li><button class="btn">28</button></li>
+  <li><button class="btn prom">29</button></li>
+  <li><button class="btn">30</button></li>
+  <li><button class="btn">31</button></li>
+</ul>
+
+<ul class="days">
+<li><span class="active"></span></li><b>Active Date</b>
+<li><span class="close"></span></li><b>Close Date</b></br></br>
+<li><span class="prom"></span></li><b>special promotion days</b></br></br>
+<li><span class="finsh"></span></li><b>Finished Days or Not Conformed Days</b>
+
+
+</ul>
+<div class="info">
+  <p><strong>Open from :</strong><i><b> 6am to 10pm</b></i></p>
+</div>
+
+</div>
+<div class="opright">
+<h1 style="color:black"; align="center"> Vision</h1>
+</div>
+</div>
+
+
+
+<div class="partner1 part1">
+<h1 style="color:blue"; align="center">Bank</br>Partner</h1>
+<img src="Pictures/pic/bank.png" width="150px" height="100px" >
+<p style="color:brown"; align="center">Name</br>Company</br>Street Address</br>Postal Code City State</br>Country</p>
+<a href="url"style="color:blue; font-size:15px"; > info@bank.partner.lk</a>
+<img src="Pictures/pic/Qr.png" width="150px" height="100px" >
+</div>
+<div class="partner1 part2">
+<h1 style="color:blue"; align="center">Food</br> Partner</h1>
+<img src="Pictures/pic/food.jpg" width="150px" height="100px" >
+<p style="color:brown"; align="center">Name</br>Company</br>Street Address</br>Postal Code City State</br>Country</p>
+<a href="url"style="color:blue; font-size:15px"; > info@food.partner.lk</a>
+<img src="Pictures/pic/Qr.png" width="150px" height="100px" >
+</div>
+<div class="partner1 part3">
+<h1 style="color:blue"; align="center">Other</br>Partners</h1>
+<img src="Pictures/pic/partner.png" width="150px" height="100px" >
+<p style="color:brown"; align="center">Name</br>Company</br>Street Address</br>Postal Code City State</br>Country</p>
+<a href="url"style="color:blue; font-size:15px"; > info@other.partner.lk</a>
+<img src="Pictures/pic/Qr.png" width="150px" height="100px" >
+</div>
+
+
+
+</body>
+</html>
